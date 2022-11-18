@@ -7,9 +7,9 @@ import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract SimpleSwap is ISimpleSwap, ERC20 {
     // Implement core logic here
 
-    constructor(string memory lpTokenName_, string memory lpTokenSymbol_) {
-        _lpTokenName = lpTokenName_;
-        _lpTokenSymbol = lpTokenSymbol_;
+    constructor(string memory lpTokenName_, string memory lpTokenSymbol_) ERC20(lpTokenName_, lpTokenSymbol_) {
+        // _lpTokenName = lpTokenName_;
+        // _lpTokenSymbol = lpTokenSymbol_;
     }
 
 
