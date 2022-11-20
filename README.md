@@ -1,4 +1,5 @@
 # SimpleSwap
+> (Modified from https://github.com/AppWorks-School/Blockchain-Resource/tree/main/section3/SimpleSwap)
 
 Implement a simple AMM swap (0% fee ratio) contract in `contracts/SimpleSwap.sol`. You must override all the external functions of `ISimpleSwap.sol`, and pass all the tests in `test/SimpleSwap.spec.ts`.
 
