@@ -54,7 +54,6 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
 
         // console.log("swap(): newReserveA: %s, newReserveB: %s", _reserveA / 1e18, _reserveB / 1e18);
 
-        uint newK = _reserveA * _reserveB;
         require(amountOut != 0, "SimpleSwap: INSUFFICIENT_OUTPUT_AMOUNT");
 
         ERC20(tokenIn).transferFrom(msg.sender, address(this), amountIn);
