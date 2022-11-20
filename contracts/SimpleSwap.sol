@@ -160,14 +160,6 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
         tokenB = address(_tokenB);
     }
 
-    function max(uint x, uint y) internal pure returns (uint z) {
-        z = x > y ? x : y;
-    }
-
-    function min(uint x, uint y) internal pure returns (uint z) {
-        z = x < y ? x : y;
-    }
-
     // Copied from https://github.com/Uniswap/v2-core/blob/master/contracts/libraries/Math.sol
     // babylonian method (https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method)
     function sqrt(uint y) internal pure returns (uint z) {
